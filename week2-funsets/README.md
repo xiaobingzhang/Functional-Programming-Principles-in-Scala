@@ -15,7 +15,7 @@
 ```
  def contains(s: Set, elem: Int): Boolean = s(elem)
 ```
-###2.1 Basic Functions on Sets
+###2.1Basic Functions on Sets
  Let’s start by implementing basic functions on sets.
 
  1. Define a function which creates a singleton set from one integer value: the set represents the set of the one given element. Its signature is as follows:
@@ -33,8 +33,9 @@
  3. Define the function `filter` which selects only the elements of a set that are accepted by a given predicate `p`. The filtered elements are returned as a new set. The signature of `filter` is as follows:
 ```
  def filter(s: Set, p: Int => Boolean): Set
-` `````
-###2.2 Queries and Transformations on Sets
+```
+
+###2.2Queries and Transformations on Sets
  In this part, we are interested in functions used to make requests on elements of a set. The first function tests whether a given predicate is true for all elements of the set. This `forall` function has the following signature:
 ```
  def forall(s: Set, p: Int => Boolean): Boolean
@@ -53,13 +54,16 @@
  }
 ```
  2. Using `forall`, implement a function `exists` which tests whether a set contains at least one element for which the given predicate is true. Note that the functions `forall` and `exists` behave like the universal and existential quantifiers of first-order logic.
+
 ```
  def exists(s: Set, p: Int => Boolean): Boolean
 ```
  3. Finally, write a function `map` which transforms a given set into another one by applying to each of its elements the given function. `map` has the following signature:
+
 ```
  def map(s: Set, f: Int => Int): Set
 ```
+
 ###Extra Hints
  *Be attentive in the video lectures on how to write anonymous functions in Scala.
  *Sets are represented as functions. Think about what it means for an element to belong to a set, in terms of function evaluation. For example, how do you represent a set that contains all numbers between 1 and 100?
