@@ -25,8 +25,8 @@ Write a recursive function which verifies the balancing of parentheses in a stri
 
 The function should return `false` for the following strings:
 
-> *:-)
-> *())(
+> :-)
+> ())(
 
 The last example shows that it’s not enough to verify that a string contains the same number of opening and closing parentheses.
 
